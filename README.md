@@ -1,5 +1,3 @@
-# Classement
-
 * [Mars 2023](./2023-03.md)
 * [Février 2023](./2023-02.md)
 * [Janvier 2023](./2023-01.md)
