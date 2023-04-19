@@ -4,8 +4,6 @@ Un jeu créé par Ambroise Garel diffusé sur [la chaîne Twitch de Canard PC](h
 
 Ce site a été créé par [Yves Gurcan](https://yvesgurcan.com). Envoyez-lui un message sur [Twitter](https://twitter.com/YvesGurcanFR) ou [LinkedIn](https://www.linkedin.com/in/yvesgurcan/).
 
-[Retour](/README.md)
-
 ## Scripts
 
     node ./scripts/json_to_md.js
@@ -28,3 +26,5 @@ Le contenu des fichiers JSON doit être formatté de la manière suivante:
     }
 ]
 ```
+
+[Retour](/README.md)
