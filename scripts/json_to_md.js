@@ -109,19 +109,14 @@ function formatDate(yyyyMMDate) {
     return `${MONTHS[month - 1]} ${year}`;
 }
 
-function removeFileExtension(string) {
-    return string.replace(/\.[^/.]+$/, '');
-}
-
 async function getJsonFiles() {
     try {
         console.log(`Getting list of files in '${JSON_FOLDER}' folder...`);
         // TODO: Only keep JSON files formatted as YYYY-MM.
         const fileList = await fs.readdir(JSON_FOLDER);
-        const reversedFileList = fileList;
         const fileListData = [];
 
-        for (const fileName of reversedFileList) {
+        for (const fileName of fileList) {
             const path = `${JSON_FOLDER}/${fileName}`;
             console.log(`Parsing file '${path}'...`);
             const fileContent = await fs.readFile(path);
@@ -136,6 +131,10 @@ async function getJsonFiles() {
     } catch (error) {
         console.error(error);
     }
+}
+
+function removeFileExtension(string) {
+    return string.replace(/\.[^/.]+$/, '');
 }
 
 async function main() {
