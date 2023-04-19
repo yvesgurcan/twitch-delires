@@ -1,4 +1,6 @@
-on: commit
+on:
+    - push
+    - workflow_dispatch
 jobs:
     generate-files:
         steps:
