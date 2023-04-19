@@ -7,7 +7,6 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - run: node ./scripts/json_to_md.js
-            - name: Commit & push changes
-                uses: actions-js/push@master
+            - uses: actions-js/push@master
                 with:
                     github_token: ${{ secrets.GITHUB_TOKEN }}
