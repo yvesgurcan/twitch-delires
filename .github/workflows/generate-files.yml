@@ -2,6 +2,7 @@ on:
     - push
     - workflow_dispatch
 jobs:
+    runs-on: ubuntu-latest
     generate-files:
         steps:
             - uses: actions/checkout@v3
